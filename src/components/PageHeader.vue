@@ -1,36 +1,58 @@
 <template>
-    <nav class="flex justify-between items-center p-4  bg-gray-800 text-white">
-        <div class="text-2xl font-bold capitalize cursor-pointer">
+    <header class="flex text-white justify-between items-center p-3">
+        <div class="text-xl font-bold capitalize cursor-pointer">
             trailbliss
         </div>
-
-        <ul class="flex space-x-6">
-            <li class="capitalize hover:text-gray-400">
-                <a href="/about">
-                    about us
-                </a>
-            </li>
-            <li class="capitalize hover:text-gray-400">
-                <a href="/adventures">
+        <nav class="flex space-x-6 items-center">
+            <a href="/about" class="flex items-center space-x-2">
+                <InformationCircleIcon class="w-5 h-5" />
+                <span class="capitalize">
+                    about
+                </span>
+            </a>
+           <a href="/guides" class="flex items-center space-x-2">
+                <MapIcon class="w-5 h-5" />
+                <span class="capitalize">
+                    guides
+                </span>
+            </a>
+            <a href="/adventures" class="flex items-center space-x-2">
+                <MapPinIcon class="w-5 h-5" />
+                <span class="capitalize">
                     adventures
-                </a>
-            </li>
-            <li class="capitalize hover:text-gray-400">
-                <a href="/contact">
-                    contact us
-                </a>
-            </li>
-        </ul>
-
-        <div class="capitalize cursor-pointer hover:text-gray-400">
-            account
+                </span>
+            </a>
+        </nav>
+        <div>
+            <a href="" class="capitalize flex items-center justify-center space-x-1 cursor-pointer">
+                <UserIcon class="w-5 h-5" />
+                <span>
+                    account
+                </span>
+            </a>
         </div>
-    </nav>
+    </header>
 </template>
 
 <script>
+
+import { InformationCircleIcon, MapIcon, MapPinIcon, UserIcon} from '@heroicons/vue/24/outline'
+
+
 export default {
-    name: 'PageHeader'
+    name: 'PageHeader',
+    components: {
+        InformationCircleIcon,
+        MapIcon,
+        MapPinIcon,
+        UserIcon
+    }
 }
 
 </script>
+
+<style scoped>
+header {
+  background: rgba(0, 0, 0, 0.5);
+}
+</style>
