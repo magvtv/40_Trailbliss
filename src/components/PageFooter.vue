@@ -3,7 +3,7 @@
         <div class="container mx-auto px-6">
             <div class="flex justify-between items-center">
                 <div>
-                    <span class="capitalize text-lg">
+                    <span class="uppercase font-bold text-lg">
                         trailbliss
                     </span>
                     <p>
@@ -12,56 +12,29 @@
                     <p class="mt-4">
                         © 2024 Trailbliss, Inc. Terms &amp; Privacy
                     </p>
-
                 </div>
 
                 <div>
-                    <p>More about Trailbliss</p>
                     <ul>
-                        <li class="capitalize">
+                        <li class="capitalize flex items-center space-x-2">
+                            <MapPinIcon class="w-5 h-5" />
                             <a href="#">
                                 our adventures
                             </a>
                         </li>
-                        <li class="capitalize">
+                        <li class="capitalize flex items-center space-x-2">
+                            <UserGroupIcon class="w-5 h-5" />
                             <a href="#">
-                                meet fellow hikers
+                                join the club
                             </a>
                         </li>
-                        <li class="capitalize">
+                        <li class="capitalize flex items-center space-x-2">
                             <a href="#">
-                                our adventures
+                                
                             </a>
                         </li>
-                        <li class="capitalize">
+                        <li class="capitalize flex items-center space-x-2">
                             <a href="#">
-                                meet fellow hikers
-                            </a>
-                        </li>
-                    </ul>
-                </div>
-
-                <div>
-                    <p>More about Trailbliss</p>
-                    <ul>
-                        <li class="capitalize">
-                            <a href="#">
-                                our adventures
-                            </a>
-                        </li>
-                        <li class="capitalize">
-                            <a href="#">
-                                meet fellow hikers
-                            </a>
-                        </li>
-                        <li class="capitalize">
-                            <a href="#">
-                                our adventures
-                            </a>
-                        </li>
-                        <li class="capitalize">
-                            <a href="#">
-                                meet fellow hikers
                             </a>
                         </li>
                     </ul>
@@ -73,9 +46,15 @@
 
 
 <script>
+import { MapPinIcon, UserGroupIcon } from '@heroicons/vue/24/outline';
+
 
 export default {
-    name: 'PageFooter'
+    name: 'PageFooter',
+    components: {
+        MapPinIcon,
+        UserGroupIcon
+    }
 }
 
 </script>
