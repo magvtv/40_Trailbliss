@@ -1,6 +1,6 @@
 <template>
     <header class="flex text-white justify-between items-center p-3">
-        <div class="text-xl font-bold capitalize cursor-pointer">
+        <div class="text-lg font-extrabold uppercase">
             trailbliss
         </div>
         <nav class="flex space-x-6 items-center">
