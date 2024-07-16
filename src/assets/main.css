@@ -2,4 +2,132 @@
 @tailwind components;
 @tailwind utilities;
 
+/* src/assets/main.css */
 
+/* General Styles */
+body {
+  font-family: 'Arial', sans-serif;
+  margin: 0;
+  color: #ffffff; /* White text color */
+  background-color: #222324; /* Dark background color */
+}
+
+/* Header Styles */
+header {
+  /* background: rgba(0, 0, 0, 0.25); */
+  background: transparent;
+  padding: 1.5rem 2rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+header nav a {
+  color: #ffffff;
+  text-decoration: none;
+  margin: 0 1rem;
+  transition: color 0.3s;
+}
+
+header nav a:hover {
+  color: #fbbf24; /* Yellow color on hover */
+}
+
+header .logo {
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+/* Hero Section Styles */
+.hero {
+  position: relative;
+  height: 100vh;
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  background-image: url('../assets/images/hero-background.jpg')
+}
+
+.hero::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.45);
+}
+
+.hero-content {
+  position: relative;
+  z-index: 10;
+}
+
+
+.hero p {
+  font-size: 1rem;
+  margin-bottom: 2rem;
+}
+
+.hero a {
+  font-size: 1.125rem;
+  color: #fbbf24; /* Yellow color */
+  text-decoration: underline;
+}
+
+/* Content Section Styles */
+.content-section {
+  padding: 5rem 2rem;
+  background-color: #0d1117;
+}
+
+.content-section h2 {
+  font-size: 2rem;
+  font-weight: bold;
+  margin-bottom: 1rem;
+}
+
+.content-section p {
+  font-size: 1rem;
+  margin-bottom: 2rem;
+}
+
+.content-section a {
+  font-size: 1rem;
+  color: #fbbf24; /* Yellow color */
+  text-decoration: underline;
+}
+
+/* Footer Styles */
+footer {
+  background-color: #0d1117;
+  padding: 2rem;
+  color: #ffffff;
+}
+
+footer p {
+  font-size: 1rem;
+  margin-bottom: 1rem;
+}
+
+footer ul {
+  list-style: none;
+  padding: 0;
+}
+
+footer ul li {
+  margin-bottom: 0.5rem;
+}
+
+footer ul li a {
+  color: #ffffff;
+  text-decoration: none;
+  transition: color 0.3s;
+}
+
+footer ul li a:hover {
+  color: #fbbf24; /* Yellow color on hover */
+}
